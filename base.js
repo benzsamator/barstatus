@@ -4,8 +4,8 @@
         var defaults = {
             message: 'Something..',
             background: '#2ECC71',
-            closed: false,
             duration: 3000,
+            closed: false,
             removeIcon: 'X'
         }
 

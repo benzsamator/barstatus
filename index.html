@@ -1,0 +1,40 @@
+<script src="jquery-2.1.0.min.js"></script> 
+<script src="base.js"></script>
+
+<script type="text/javascript">
+
+/*
+	message: text,
+    background: color,
+    duration: 1000 = 1 sec,
+    closed: true / false,
+    removeIcon: '..icon..' <-- use with closed option
+*/
+
+	function success(){
+		$('body').barStatus({
+			message: 'success',
+			background: '#2ECC71',
+			duration: 3000
+		});
+	}
+
+	function error(){
+		$('body').barStatus({
+			message: 'error',
+			background: '#CF000F',
+			closed: true,
+    		removeIcon: 'Close'
+		});
+	}
+		
+</script>
+<style>
+	body , html{
+		margin: 0;
+		padding: 0;
+	}
+</style>
+<br><br><br><br><br><br><br><br>
+<button onclick="success()">success</button>
+<button onclick="error()">error</button>
